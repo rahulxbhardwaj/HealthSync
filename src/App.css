@@ -2,5 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-main {
+
+*{
+  margin : 0%;
+  padding : 0%;
+  font-family : "Noto Sans", sans-serif;
+  box-sizing : border-box;
+  text-decoration : none;
+  scroll-behavior: smooth;
 }
