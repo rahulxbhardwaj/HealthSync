@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/newUser.scss';
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
 const NewUser = () => {
@@ -23,13 +24,14 @@ const handleSubmit = async (e) => {
   
 return(
   <>
-  <form onSubmit={handleSubmit}>
+  <form onSubmit={handleSubmit} className="form-container">
     {/* <p>{JSON.stringify(form)}</p> */}
-  <label className='mt-50' >Name</label>
-  <input type="text" onChange={handleForm} name="name"></input>
-    <label>Age</label>
-    <input type="number" onChange={handleForm} name="age"></input>
-  <input type="submit"></input>
+  <label id="name" >Name</label>
+  <input type="text" onChange={handleForm} name="name" class="form-control" placeholder='Name'></input>
+    <label id="age">Age</label>
+    <input type="number" onChange={handleForm} name="age" class="form-control" placeholder='Age'></input>
+    <br></br>
+  <input type="submit" id="submit" class="submit"></input>
   
   </form>
 

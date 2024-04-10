@@ -1,0 +1,82 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; /* Centering vertically */
+
+  #name{
+    color:red;
+    margin-right : 10px;
+  }
+  #age{
+    color:red;
+    margin-right : 10px;
+    margin-left: 30px;
+  }
+  #submit {
+    margin-left : 10px;
+  }
+}
+
+
+/* Custom CSS based on Bootstrap for form control */
+input.form-control {
+  display: block;
+  width: 10%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Custom CSS for placeholder text */
+input.form-control::placeholder {
+  color: #6c757d;
+  opacity: 1; /* Firefox */
+}
+
+/* Custom CSS for focus state */
+input.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Custom CSS for submit button */
+input.submit {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #198754;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Custom CSS for submit button hover state */
+input.submit:hover {
+  background-color: #0056b3;
+}
+
+/* Custom CSS for submit button focus state */
+input.submit:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+/* Custom CSS for submit button disabled state */
+input.submit:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}

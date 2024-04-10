@@ -1,5 +1,6 @@
 import './App.css';
 import '../styles/header.scss';
+import '../styles/newUser.scss';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Header from '../components/header';
 import Home from '../components/home';
