@@ -7,6 +7,7 @@ import Home from '../components/home';
 import NewUser from '../components/newUser'; 
 import Login from '../components/login';
 import AboutUs from '../components/aboutus';
+import AllUser from '../components/allUser';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/newuser" element={<NewUser />} />
         <Route path="/login" element={<Login />} />
         <Route path="/aboutus" element={<AboutUs />} />
+         <Route path="/alluser" element={<AllUser />} />
       </Routes>
     </Router>
   );
