@@ -10,7 +10,7 @@ const Alluser = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('https://04ce187e-3625-42bf-8c17-19ade5488540-00-177ormojml0pl.worf.replit.dev/alluser', { method: 'GET' });
+      const response = await fetch('https://healthsyncedserver.vercel.app/alluser', { method: 'GET' });
       const data = await response.json();
       setUserData(data);
     } catch (error) {
