@@ -1,0 +1,57 @@
+.about-us {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-us h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.about-us p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-us ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-us ul li {
+  margin-bottom: 10px;
+}
+
+.about-us ul li strong {
+  font-weight: bold;
+}
+
+.about-us a {
+  color: #007bff; /* Blue color */
+}
+
+.about-us a:hover {
+  color: #0056b3; /* Darker blue color on hover */
+}
+#password {
+  color:red;
+  margin-right : 10px;
+  margin-left:10px;
+  margin-top:10px;
+  text-align:center;
+  border:1px solid black;
+}
+
+#alluser{
+  margin-top:10px;
+  margin-left:15px;
+  font-size:30px
+}
