@@ -13,7 +13,7 @@ const NewUser = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('https://04ce187e-3625-42bf-8c17-19ade5488540-00-177ormojml0pl.worf.replit.dev/newUser', {
+    const response = await fetch('https://healthsyncedserver.vercel.app/newUser', {
       method: 'POST',
       body: JSON.stringify(form),
       headers: { 'Content-Type': 'application/json' },
