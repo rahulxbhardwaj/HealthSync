@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <img src={Doctor} alt="Doctor" id="doctor" />
-       <div class="overlay-text">Syncing Health for Seamless Care</div>
+       <div class="overlay-textt">Syncing Health for Seamless Care</div>
       <div>
         <br></br>
         

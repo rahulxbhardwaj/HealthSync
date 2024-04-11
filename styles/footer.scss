@@ -1,0 +1,22 @@
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 30vh; /* Reserve space for the footer */
+  min-height: 100vh; /* Ensure body stretches to at least the height of the viewport */
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  background: grey;
+  height: 25vh;
+  bottom: 0; /* Stick the footer to the bottom */
+  text-align: center; /* Center content horizontally */
+}
+
+#h2footer {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10vh;
+  margin-bottom: 10vh;
+}

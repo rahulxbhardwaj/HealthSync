@@ -64,7 +64,7 @@ const Alluser = () => {
     <>
       {selectedUser && (
         <div className="user-profile">
-          <h3>User Profile</h3>
+          <h3 id="h3alluser">User Profile</h3>
           <p><strong>ID:</strong> {selectedUser._id}</p>
           <p><strong>Name:</strong> {selectedUser.name}</p>
           <p><strong>Age:</strong> {selectedUser.age}</p>

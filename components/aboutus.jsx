@@ -1,44 +1,132 @@
 import React from "react";
 import "../styles/aboutus.scss";
+import "@fortawesome/fontawesome-free/css/all.css"; // Import Font Awesome CSS
 
-const AboutUs = () => {
+function TeamSection() {
+  let message = `Meet the vibrant team driving HealthSync forward, a fusion of dedication, versatility, and aspiration.\n Comprising fresh minds brimming with potential, they are a powerhouse of multi-talented individuals \n proficient in frontend and backend development, design, and Python programming. With a shared vision and relentless drive,\n they are shaping the future of healthcare technology with innovation and passion at its core.`;
+
   return (
-    <div className="about-us">
-      <h1>About Us</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae
-        dolor quis felis accumsan accumsan.
-      </p>
+    <section className="section-white">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12 text-center">
+            <h2 className="section-title">The Team Behind HEATLHSYNC</h2>
+            <p className="section-subtitle" id="message">{message}</p>
+          </div>
+        </div>
+      </div>
 
-      <h2>Our Mission</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae
-        dolor quis felis accumsan accumsan.
-      </p>
+      <div className="home-container">
+        {/* Profile 1 */}
+        <div className="profile-card">
+          <div className="img">
+            <img src="/assets/vatsal.jpeg" alt="Profile 1" />
+          </div>
+          <div className="caption">
+            <h3>Vatsal Mishra</h3>
+            <p>Python Developer</p>
+            <div className="social-links">
+              <a
+                href="https://github.com/Vatsal212005"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+              <a
+                href="https://3-d-portfolio-xmpn.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-chrome"></i>
+              </a>
+            </div>
+          </div>
+        </div>
 
-      <h2>Our Team</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae
-        dolor quis felis accumsan accumsan.
-      </p>
+        {/* Profile 2 */}
+        <div className="profile-card">
+          <div className="img">
+            <img src="/assets/rahul.png" alt="Profile 2" />
+          </div>
+          <div className="caption">
+            <h3>Rahul</h3>
+            <p>Full Stack Developer</p>
+            <div className="social-links">
+              <a
+                href="https://github.com/rahulxbhardwaj"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+              <a
+                href="https://rahulcoded.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-chrome"></i>
+              </a>
+            </div>
+          </div>
+        </div>
 
-      <h2>Contact Us</h2>
+        {/* Profile 3 */}
+        <div className="profile-card">
+          <div className="img">
+            <img src="/assets/rohit.jpeg" alt="Profile 3" />
+          </div>
+          <div className="caption">
+            <h3>Rohit Papnai</h3>
+            <p>UI UX Developer</p>
+            <div className="social-links">
+              <a
+                href="https://github.com/rprohitpapnai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/rohit-papnai-012875219"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae
-        dolor quis felis accumsan accumsan. Vestibulum cursus vestibulum risus
-        vitae feugiat. Ut quis velit lobortis, consequat libero sit amet,
-        malesuada tortor. Sed euismod sagittis commodo. Mauris id tellus vel
-        lorem viverra dapibus. Nam nec mauris nec arcu condimentum faucibus.
-        Donec vitae nulla leo. Morbi id magna nisi. Phasellus gravida velit
-        libero, quis molestie arcu bibendum eget. Donec vitae justo ut ex
-        pulvinar rhoncus. Integer lobortis tellus at lorem vestibulum
-        scelerisque. Donec tempor sodales orci, eu consequat felis tincidunt
-        vel. Fusce vestibulum convallis odio id sodales. Donec eleifend enim
-        quis odio efficitur, at dapibus ligula rhoncus.
-      </p>
-    </div>
+        {/* Profile 4 */}
+        <div className="profile-card">
+          <div className="img">
+            <img src="/assets/dp.png" alt="Profile 4" />
+          </div>
+          <div className="caption">
+            <h3>Arjun Negi</h3>
+            <p>Frontend Engineer</p>
+            <div className="social-links">
+              <a
+                href="https://github.com/CoderOtakuX"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/arjunnegi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
-};
+}
 
-export default AboutUs;
+export default TeamSection;
