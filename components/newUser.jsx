@@ -38,10 +38,10 @@ const NewUser = () => {
         <label id="age">Age</label>
         <input type="number" onChange={handleForm} name="age" className="form-control" placeholder="Age" />
 
-        <label id="bmi">BMI</label>
+        <label id="age">BMI</label>
         <input type="number" onChange={handleForm} name="bmi" className="form-control" placeholder="BMI" />
 
-        <label id="number">Mobile No:</label>
+        <label id="age">Mobile No:</label>
         <input type="number" onChange={handleForm} name="number" className="form-control" placeholder="98XX" />
 
         <div className="form-row-history">
