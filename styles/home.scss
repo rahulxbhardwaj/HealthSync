@@ -23,3 +23,47 @@
 .overlay-text:hover {
   text-decoration: underline; /* Underline on hover */
 }
+
+#ourfindings {
+  font-size:40px;
+  text-align:center;
+  color: #008adf;
+}
+
+
+  #table {
+      width: 40%; 
+      height: auto;
+    margin-left:30vw;
+    margin-top:5vh;
+    image-rendering: crisp-edges;
+    border: 2px solid black;
+  }
+p{
+  text-align:center;
+  margin-top:2vh;
+}
+
+#h3table {
+  text-align:center;
+  margin-top:2vh;
+  color:red;
+  font-size:20px;
+  margin-right:10vh;
+  margin-left:10vh;
+  border: 2px solid black;
+}
+
+#smokergender {
+  display: flex;
+  justify-content: center; /* Horizontally center the flex items */
+  margin-top: 7vh;
+  padding-left: 1vw;
+  align-items: center;
+  width: 100%;
+   border: 2px solid black;
+}
+
+// #genderr{
+//   margin-lef
+// }
