@@ -12,22 +12,24 @@ const NewUser = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    const response = await fetch('https://healthsyncedserver.vercel.app/newUser', {
-      method: 'POST',
-      body: JSON.stringify(form),
-      headers: { 'Content-Type': 'application/json' },
-    });
-    const data = await response.json();
-    if (response.ok) {
-      alert('Data saved');
-      window.location.reload(); // Refresh the page
-    } else {
-      // Handle error cases here
-      console.error('Failed to save data:', data.error);
-      alert('Failed to save data. Please try again.');
-    }
+      e.preventDefault();
+      const response = await fetch('https://healthsyncedserver.vercel.app/newUser', {
+          method: 'POST',
+          body: JSON.stringify(form),
+          headers: { 'Content-Type': 'application/json' },
+      });
+      const data = await response.json();
+      if (response.ok) {
+          alert('Data saved');
+          // Redirect to a specific URL
+          window.location.href = 'https://healthsynced.vercel.app/'; // Change this to your actual URL
+      } else {
+          // Handle error cases here
+          console.error('Failed to save data:', data.error);
+          alert('Failed to save data. Please try again.');
+      }
   };
+
 
   return (
     <>
