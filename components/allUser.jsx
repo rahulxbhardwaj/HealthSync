@@ -42,6 +42,24 @@ const Alluser = () => {
     setSelectedUser(user);
   };
 
+  const handleDeleteUser = async (userId) => {
+    try {
+      const response = await fetch(`https://healthsyncedserver.vercel.app/user/${userId}`, {
+        method: 'DELETE',
+      });
+      if (response.ok) {
+        // If deletion is successful, fetch updated data
+        await fetchData();
+      } else {
+        console.error('Failed to delete user');
+        alert('Failed to delete user. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error deleting user:', error);
+      alert('Failed to delete user. Please try again.');
+    }
+  };
+
   return (
     <>
       {selectedUser && (
@@ -77,6 +95,7 @@ const Alluser = () => {
                 <th>Name</th>
                 <th>Age</th>
                 <th>BMI</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -86,6 +105,10 @@ const Alluser = () => {
                   <td>{user.name}</td>
                   <td>{user.age}</td>
                   <td>{user.bmi}</td>
+                  <td><button onClick={(e) => {
+                    e.stopPropagation(); // Prevent row click event
+                    handleDeleteUser(user._id);
+                  }}>Delete</button></td>
                 </tr>
               ))}
             </tbody>
