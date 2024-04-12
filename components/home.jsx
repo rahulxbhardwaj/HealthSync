@@ -44,10 +44,10 @@ const Home = () => {
     
 
         
-        <h3 id="h3table"> This chart is a boxplot that visualizes the age distribution of patients by sex and CHD (coronary heart disease) risk level. It was likely chosen to gain insights into how age, sex, and CHD risk level may be related in this dataset.
+        <h3 id="h3table"> This chart is a boxplot that visualizes the age distribution of patients by sex and CHD (coronary heart disease) risk level. It was chosen to gain insights into how age, sex, and CHD risk level may be related in this dataset.
         <br></br>What is/are the insight(s) found from the chart?
         There is a noticeable difference in the age distribution of patients who are at risk for CHD compared to those who are not at risk. Patients at risk for CHD tend to be older than those who are not at risk, regardless of sex. </h3>
-        <h3 id="h3table">This chart is a countplot that visualizes the frequency of CHD (coronary heart disease) cases among smokers and non-smokers. It was likely chosen to gain insights into how smoking may be related to the risk of CHD in this dataset. <br></br>
+        <h3 id="h3table">This chart is a countplot that visualizes the frequency of CHD (coronary heart disease) cases among smokers and non-smokers. It was chosen to gain insights into how smoking may be related to the risk of CHD in this dataset. <br></br>
         What is/are the insight(s) found from the chart?
         The chart shows that patients who smoke appear to be at higher risk for CHD than those who do not smoke in this dataset. Specifically, a higher proportion of patients who smoke are at risk for CHD compared to those who do not smoke. These findings suggest that smoking may be a factor in determining the risk of CHD in this dataset.</h3>
      
