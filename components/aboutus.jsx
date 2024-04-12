@@ -1,7 +1,10 @@
 import React from "react";
 import "../styles/aboutus.scss";
 import "@fortawesome/fontawesome-free/css/all.css"; // Import Font Awesome CSS
-
+import Vatsal from "../public/vatsal.jpeg";
+import Arjun from "../public/dp.png";
+import Rahul from "../public/rahul.png";
+import Rohit from "../public/rohit.jpeg";
 function TeamSection() {
   let message = `Meet the vibrant team driving HealthSync forward, a fusion of dedication, versatility, and aspiration.\n Comprising fresh minds brimming with potential, they are a powerhouse of multi-talented individuals \n proficient in frontend and backend development, design, and Python programming. With a shared vision and relentless drive,\n they are shaping the future of healthcare technology with innovation and passion at its core.`;
 
@@ -11,7 +14,9 @@ function TeamSection() {
         <div className="row">
           <div className="col-md-12 text-center">
             <h2 className="section-title">The Team Behind HEATLHSYNC</h2>
-            <p className="section-subtitle" id="message">{message}</p>
+            <p className="section-subtitle" id="message">
+              {message}
+            </p>
           </div>
         </div>
       </div>
@@ -20,7 +25,7 @@ function TeamSection() {
         {/* Profile 1 */}
         <div className="profile-card">
           <div className="img">
-            <img src="/assets/vatsal.jpeg" alt="Profile 1" />
+            <img src={Vatsal} alt="Doctor" />
           </div>
           <div className="caption">
             <h3>Vatsal Mishra</h3>
@@ -47,7 +52,7 @@ function TeamSection() {
         {/* Profile 2 */}
         <div className="profile-card">
           <div className="img">
-            <img src="/assets/rahul.png" alt="Profile 2" />
+             <img src={Rahul} alt="Doctor" />
           </div>
           <div className="caption">
             <h3>Rahul</h3>
@@ -74,7 +79,7 @@ function TeamSection() {
         {/* Profile 3 */}
         <div className="profile-card">
           <div className="img">
-            <img src="/assets/rohit.jpeg" alt="Profile 3" />
+             <img src={Rohit} alt="Doctor" />
           </div>
           <div className="caption">
             <h3>Rohit Papnai</h3>
@@ -101,7 +106,7 @@ function TeamSection() {
         {/* Profile 4 */}
         <div className="profile-card">
           <div className="img">
-            <img src="/assets/dp.png" alt="Profile 4" />
+            <img src={Arjun} alt="Doctor" />
           </div>
           <div className="caption">
             <h3>Arjun Negi</h3>
