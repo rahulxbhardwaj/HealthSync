@@ -4,7 +4,7 @@ import '../styles/allUser.scss';
 const Alluser = () => {
   const [userData, setUserData] = useState([]);
   const [showUserData, setShowUserData] = useState(false);
-  const [password, setPassword] = useState('chamak');
+  const [password, setPassword] = useState('doctor123');
   const [passwordInput, setPasswordInput] = useState('');
   const [selectedUser, setSelectedUser] = useState(null);
 
@@ -73,7 +73,7 @@ const Alluser = () => {
           <p><strong>History:</strong> {selectedUser.history}</p>
         </div>
       )}
-
+  
       <h2 id="alluser">All Users</h2>
       {!showUserData && (
         <>
@@ -82,8 +82,9 @@ const Alluser = () => {
             placeholder="Enter Password"
             value={passwordInput}
             onChange={handlePasswordInput} id = "password"
+            placeholder="Hint : doctor123"
           />
-          <button onClick={handleSubmitPassword}>Submit</button>
+          <button onClick={handleSubmitPassword} id="submit">Submit</button>
         </>
       )}
       {showUserData && (
