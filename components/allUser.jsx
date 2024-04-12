@@ -74,7 +74,7 @@ const Alluser = () => {
         </div>
       )}
   
-      <h2 id="alluser">All Users</h2>
+      <h2 id="alluser">All User</h2>
       {!showUserData && (
         <>
           <input

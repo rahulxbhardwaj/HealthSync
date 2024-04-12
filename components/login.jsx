@@ -1,9 +1,15 @@
-import '../styles/newUser.scss';
+import '../styles/login.scss';
 
 const Login = () => {
 return(
   <>
-  <h1>Login In</h1>
+  <div className="login-container">
+    <label id="healthidlabel">Health ID</label>
+  <input type="text" placeholder="Health Id" id="healthid" />
+    <label id="healthidlabel">Password</label>
+    <input type="password" placeholder="********" id="healthid" /><br></br>
+    <button id="submitlabel">Submit</button>
+  </div>
   </>
 )
 };
