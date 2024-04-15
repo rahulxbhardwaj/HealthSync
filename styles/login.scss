@@ -1,25 +1,50 @@
-.login-container{
-  width:100%;
-  align-content:center;
-}
+#login-form{
+  display:flex-box;
+  margin-top : 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  #username-login{
+    border: 1px solid black;
+    text-align:center;
+    color:red;
+  }
 
-#healthid {
+  #login-label{
+    // margin-left : 42%;
+    // padding-top: 5vh;
+  }
+
+  #password-login {
+    border: 1px solid black;
+    text-align:center;
+    color:red;
+  }
+
+  #password-label{
+    // margin-left : 42.3%;
+    // padding-top : 10%;
+    justify-content:center
+  }
+
+  .flex{
+    // display : flex ;
+    flex-direction: column;
+    
+  }
+
+#submitt{
+  margin-top : 1%;
+  padding-left : 1%;
+  padding-right : 1%;
   border : 1px solid black;
-  text-align:center;
-  margin-left:1%;
-  color:red;
-  margin-top:3%;
+  border-radius : 1rem;
+  background:#0FC2C0;
+}
 }
 
-#healthidlabel{
-  margin-left:40%;
-  margin-top:3%;
-}
 
-#submitlabel{
-  margin-left:50%;
-  margin-top:2%;
-  background:red;
-  color:white;
-}
+
+

@@ -36,17 +36,13 @@ const Alluser = () => {
     setPasswordInput(''); // Reset the password input field
   };
 
-  const handleUserClick = (userId) => {
-    // Find the selected user from userData array based on userId
-    const user = userData.find(user => user._id === userId);
-    setSelectedUser(user);
-  };
-
   const handleDeleteUser = async (userId) => {
     try {
-      const response = await fetch(`https://healthsyncedserver.vercel.app/user/${userId}`, {
+      console.log(userId);
+      const response = await fetch(`https://healthsyncedserver.vercel.app/delete/${userId}`, {
         method: 'DELETE',
       });
+      console.log(response);
       if (response.ok) {
         // If deletion is successful, fetch updated data
         await fetchData();
@@ -59,6 +55,7 @@ const Alluser = () => {
       alert('Failed to delete user. Please try again.');
     }
   };
+
 
   return (
     <>
@@ -79,7 +76,6 @@ const Alluser = () => {
         <>
           <input
             type="password"
-            placeholder="Enter Password"
             value={passwordInput}
             onChange={handlePasswordInput} id = "password"
             placeholder="Hint : doctor123"

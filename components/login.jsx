@@ -2,15 +2,27 @@ import '../styles/login.scss';
 
 const Login = () => {
 return(
-  <>
-  <div className="login-container">
-    <label id="healthidlabel">Health ID</label>
-  <input type="text" placeholder="Health Id" id="healthid" />
-    <label id="healthidlabel">Password</label>
-    <input type="password" placeholder="********" id="healthid" /><br></br>
-    <button id="submitlabel">Submit</button>
-  </div>
-  </>
+<>
+<div id="login">
+  <form id="login-form">
+     <label id="login-label">Username </label>
+    <input type='username' id="username-login" placeholder='Username'></input>
+<br></br><br></br><br></br>
+  
+    <label id="password-label">Password </label>
+     <input type='password' id="password-login" placeholder='********'></input>
+
+     <input type="submit" id="submitt" className="submitt" />
+   
+  </form>
+</div>
+ 
+
+
+
+
+
+</>
 )
 };
 
