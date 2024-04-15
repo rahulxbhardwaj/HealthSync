@@ -13,7 +13,7 @@ function TeamSection() {
       <div className="container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <h2 className="section-title">The Team Behind HEATLHSYNC</h2>
+            <h2 className="section-title">The Team Behind HEALTHSYNC</h2>
             <p className="section-subtitle" id="message">
               {message}
             </p>
@@ -52,7 +52,7 @@ function TeamSection() {
         {/* Profile 2 */}
         <div className="profile-card">
           <div className="img">
-             <img src={Rahul} alt="Doctor" />
+            <img src={Rahul} alt="Doctor" />
           </div>
           <div className="caption">
             <h3>Rahul</h3>
@@ -79,7 +79,7 @@ function TeamSection() {
         {/* Profile 3 */}
         <div className="profile-card">
           <div className="img">
-             <img src={Rohit} alt="Doctor" />
+            <img src={Rohit} alt="Doctor" />
           </div>
           <div className="caption">
             <h3>Rohit Papnai</h3>
