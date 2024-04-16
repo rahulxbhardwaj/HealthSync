@@ -77,7 +77,7 @@ function TeamSection() {
         </div>
 
         {/* Profile 3 */}
-        <div className="profile-card">
+        {/* <div className="profile-card">
           <div className="img">
             <img src={Rohit} alt="Doctor" />
           </div>
@@ -101,7 +101,7 @@ function TeamSection() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Profile 4 */}
         <div className="profile-card">
