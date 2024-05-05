@@ -56,6 +56,10 @@ const Alluser = () => {
     }
   };
 
+  const handleUserClick = (userId) => {
+    const clickedUser = userData.find(user => user._id === userId);
+    setSelectedUser(clickedUser);
+  };
 
   return (
     <>
@@ -66,11 +70,11 @@ const Alluser = () => {
           <p><strong>Name:</strong> {selectedUser.name}</p>
           <p><strong>Age:</strong> {selectedUser.age}</p>
           <p><strong>BMI:</strong> {selectedUser.bmi}</p>
-           <p><strong>Mobile no:</strong> {selectedUser.mobile}</p>
+          <p><strong>Mobile no:</strong> {selectedUser.mobile}</p>
           <p><strong>History:</strong> {selectedUser.history}</p>
         </div>
       )}
-  
+
       <h2 id="alluser">All User</h2>
       {!showUserData && (
         <>
